@@ -1,88 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  
-	<link href="themes/prism.css" rel="stylesheet" />
-  
-	
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="index.css">
-  
-	<link href="themes/prism.css" rel="stylesheet" />
-	
-
-	<link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" />
- 
-  <script src="index.js"></script>
-  
-  
-  <!-- copy code -->
-<script src="dist/clipboard.min.js"></script>
-  
-  
-  <title>prismjs</title>
-</head>
-<body>
-   
-  <a href="https://devoojs.github.io/h/amp.html">link amp</a>
-  
-<pre><code class="language-js">
-  import {x, y} as p from 'point';
-const ANSWER = 42;
-
-class Car extends Vehicle {
-  constructor(speed, cost) {
-    super(speed);
-
-    var c = Symbol('cost');
-    this[c] = cost;
-
-    this.intro = `This is a car runs at
-      ${speed}.`;
-  }
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>devoojs</title>
+    <link rel="canonical" href="https://amp.dev/ar/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    <style>
+.hamburger {
+  margin: 10px;
+  float: right;
 }
+.sidebar {
 
-for (let num of [1, 2, 3]) {
-  console.log(num + 0b111110111);
+  margin: 0;
 }
+.sidebar > li {
+  list-style: none;
 
-function $initHighlight(block, flags) {
-  try {
-    if (block.className.search(/\bno\-highlight\b/) != -1)
-      return processBlock(block.function, true, 0x0F) + ' class=""';
-  } catch (e) {
-    /* handle exception */
-    var e4x =
-        <div>Example
-            <p>1234</p></div>;
-  }
-  for (var i = 0 / 2; i < classes.length; i++) {
-  // "0 / 2" should not be parsed as regexp
-    if (checkCondition(classes[i]) === undefined)
-      return /\d+[\s/]/g;
-  }
-  console.log(Array.every(classes, Boolean));
 }
+.sidebar a {
+  text-decoration: none;
+}
+.close-sidebar {
+  font-size: 1.5em;
+  padding-left: 5px;
+}
+    </style>
+    
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  </head>
+  <body>
+    
+<header class="headerbar">
+  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger" >☰</div>
+</header>
 
-export  $initHighlight;
-  </code></pre>
-<!-- Target -->
+<amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+  <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+  <ul class="sidebar">
+    <li><a href="https://devoojs.github.io/h/">الرئيسية</a></li>
+    <li><a href="#">Example 2</a></li>
+    <li><a href="#">Example 3</a></li>
+  </ul>
+</amp-sidebar>
 
-
-
-
-	<script src="prism.js"></script>
-
-
-<!-- BULMA -->
-
- 
-	
-	<script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"></script>
-	<script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
-
-</body>
+    
+    <h6>Welcome to the mobile web</h6>
+  </body>
 </html>
